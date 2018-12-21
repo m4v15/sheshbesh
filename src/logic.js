@@ -83,6 +83,7 @@ const randomise = () => {
     a. Pick a random piece from our array, and get it's colour
     b. get the opposite colour as well
     c. get the a list of allowed spikes by filtering out any spikes already claimed by the other colour
+      * if the current colout already has 6 spikes, it can only choose from those spikes
     d. get a random spike on our board from that list of allowed spikeIds
     e. Change colour and number of pieces properties on the spike as appropriate
     f. add the spike id to those belonging to this colour
@@ -107,9 +108,14 @@ const randomise = () => {
       let pieceColour = randomPiece.colour
       let oppositeColour = inverseColour(pieceColour)
       let forbiddenSpikeIds = colourSpikeIds[oppositeColour]
-      let allowedSpikeIds = numericArray(24).filter(number => {
-        return !forbiddenSpikeIds.includes(number)
-      })
+
+      let currentColourSpikeIds = colourSpikeIds[pieceColour]
+
+      let allowedSpikeIds = currentColourSpikeIds.length < 6
+        ? numericArray(24).filter(number => {
+          return !forbiddenSpikeIds.includes(number)
+        })
+        : currentColourSpikeIds
 
       let randomSpikeId = allowedSpikeIds[randomIndex(allowedSpikeIds)]
 
