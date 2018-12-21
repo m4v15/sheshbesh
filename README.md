@@ -1,3 +1,16 @@
+## Progress so far:
+
+- Dynamically generates a board in react with css grid
+- dynamically generates another grid on top for the pieces to be placed on
+- this would work very neatly appart from the fact that grid autofill _has_ to start at row 1 and can't be reversed
+  - was hoping that we could just give the pieces columns and it would automatically put them on the correct row
+- new plan: possibly use flexbox (although not sure this can work now) or maybe just keep track of how the grid is being filled when randomising the pieces (probably the best as it would also mean we can get rid of the double grid system)
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

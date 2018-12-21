@@ -3,26 +3,60 @@
 .board {
   margin:auto;
   display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(14, 1fr);
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(13, 1fr);
   border: 1px solid black;
   height: 75vw;
   width: 75vw;
+  position: absolute
 }
+
+.back {
+  z-index: -99
+}
+
 
 .piece {
   justify-self: stretch;
-  background-color: red;
+  border-radius: 100%;
   grid-column: 1;
-  grid-row: 1;
-  border-radius: 100%
 }
 
-.spike {
+.spike-top {
   clip-path: polygon(0 0, 50% 100%, 100% 0);
-  background-color: black;
-  grid-column: 1;
   grid-row: 1/7;
   justify-self: stretch;
   z-index: -99;
+}
+
+.spike-bottom {
+  clip-path: polygon(0 100%, 100% 100%, 50% 0);
+  grid-row: 8/14;
+  justify-self: stretch;
+  z-index: -99;
+}
+
+.bar {
+  justify-self: stretch;
+  background-color: rgb(209, 172, 9);
+  grid-column: 7/8;
+  grid-row:1/14;
+}
+
+.black {
+  background-color: black;
+
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+
+}
+
+.purple {
+  background-color: purple;
 }
