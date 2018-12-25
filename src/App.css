@@ -165,3 +165,23 @@ body {
   background-color: #39bda7;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
+
+@media only screen and (max-width: 480px) {
+  .board {
+    height: 80vw;
+    width: 80vw;
+  }
+  
+  .board-container {
+    height: 80vw;
+    width: 80vw;
+  }
+  
+  .home {
+    width: 80vw;
+  }
+
+  .piece {
+    line-height:1.4;
+  }
+}
