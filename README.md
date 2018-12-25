@@ -1,4 +1,4 @@
-#### [Live Site Here](http://small-spot.surge.sh/)
+[Live Site Here](http://small-spot.surge.sh/)
 
 ## What
 
