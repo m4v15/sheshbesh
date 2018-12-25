@@ -54,7 +54,7 @@ const distanceHome = (colour, board) => spikeId => {
 }
 
 
-const totalDistance = (board, colour) => {
+export const totalDistance = (board, colour) => {
   /*
   Uses distanceHome to determine total steps needed for a particular colour for a given board
   */
@@ -134,7 +134,7 @@ const randomise = () => {
   return { board, count }
 }
 
-const { board: randomBoard, count } = randomise()
+// const { board: randomBoard, count } = randomise()
 
 
 
@@ -145,11 +145,11 @@ const { board: randomBoard, count } = randomise()
 // 
 // Uncomment the console logs to make some boards
 // -------------------------------------
-console.log(randomBoard)
-console.log('Green steps needed: ', totalDistance(randomBoard, 'green'))
-console.log('Purple steps needed: ', totalDistance(randomBoard, 'purple'))
-console.log('Step Difference: ', totalDistance(randomBoard, 'green') - totalDistance(randomBoard, 'purple'))
-console.log('Cycles needed: ', count)
+// console.log(randomBoard)
+// console.log('Green steps needed: ', totalDistance(randomBoard, 'green'))
+// console.log('Purple steps needed: ', totalDistance(randomBoard, 'purple'))
+// console.log('Step Difference: ', totalDistance(randomBoard, 'green') - totalDistance(randomBoard, 'purple'))
+// console.log('Cycles needed: ', count)
 
 
 // BELOW IS A FUNCTION TO TEST WE ARE ADDING CORRECT NUMBER OF PIECES 
@@ -181,4 +181,4 @@ console.log('Cycles needed: ', count)
 // console.log('Purple correct: ', (totalDistance(testCase, 'purple') === 3))
 
 
-// export default makeBoard
+export default randomise
