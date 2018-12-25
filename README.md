@@ -1,14 +1,18 @@
-## Progress so far:
+## What
 
-- Dynamically generates a board in react with css grid
-- dynamically generates another grid on top for the pieces to be placed on
-- this would work very neatly appart from the fact that grid autofill _has_ to start at row 1 and can't be reversed
-  - was hoping that we could just give the pieces columns and it would automatically put them on the correct row
-- new plan: possibly use flexbox (although not sure this can work now) or maybe just keep track of how the grid is being filled when randomising the pieces (probably the best as it would also mean we can get rid of the double grid system)
+Create a random board set up for sheshbesh.
 
+Maximum number of 6 starting starting spikes per colour.
 
+Maximum difference in pip count is 3 which is generally <2%.
 
+## How
 
+Create a visual board using CSS
+
+Create a data board using Javascript, which contains information about each spike - it's colour and number of pieces (of that colour)
+
+Using the data board, render pieces on top of the visual board.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
