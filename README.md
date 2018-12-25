@@ -19,6 +19,10 @@ Using the data board, render pieces on top of the visual board.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Notes
+
+- Not mobile friendly 
+
 ## Available Scripts
 
 In the project directory, you can run:
