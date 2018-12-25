@@ -8,7 +8,7 @@
   border: 1px solid black;
   height: 75vh;
   width: 75vh;
-  position: absolute
+  position: absolute;
 }
 
 .page-container {
@@ -28,7 +28,9 @@
 }
 
 .back {
-  z-index: -99
+  z-index: -99;
+  background-color: rgb(228, 215, 156);
+
 }
 
 
@@ -39,6 +41,7 @@
   color: black;
   text-align: center;
   line-height:2.8;
+  z-index: 1;
 }
 
 .spike-top {
@@ -80,7 +83,6 @@
 
 .black {
   background-color: black;
-
 }
 
 .red {

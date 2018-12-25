@@ -116,8 +116,8 @@ class App extends Component {
             <div>Green pip count:{totalDistance(this.state.board, 'green')}</div>
             <div>Purple pip count:{totalDistance(this.state.board, 'purple')}</div>
           </div>
-          <div class="button-container" onClick={this.handleClick}>
-            <p class="button">Again!</p>
+          <div className="button-container" onClick={this.handleClick}>
+            <p className="button">Again!</p>
           </div>
         </div>
       </Fragment>
